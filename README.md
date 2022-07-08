@@ -4,6 +4,7 @@ This is back-end server
 It set up CORS for client app
 http://localhost:3000
 
+Launch App Guide: 
 STEP 1 : CLONE project
 STEP 2 : CREATE new DB in MySQL
     - Name of Database : bookingcare
@@ -19,4 +20,6 @@ STEP 5 : Create file .env with:
 
     EMAIL_APP_PASSWORD= Your email password 
     EMAIL_APP= Your email
-STEP 5 : npm start
+STEP 5 : npm install
+
+STEP 6 : npm start
