@@ -299,11 +299,17 @@ let handleChangePassword = (inputData) => {
                     });
                     let data = await db.ForgotPassword.findOne({
                         where: {
-                            email: email
+                            email: email,
+                            statusId: 'S1'
                         },
                         raw: false
                     })
                     if (data) {
+                        console.log('-------------------------------------------0');
+                        console.log(data);
+
+                        console.log('-------------------------------------------1');
+
                         data.statusId = 'S2'
                         await data.save()
                     }
